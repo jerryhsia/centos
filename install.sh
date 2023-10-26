@@ -1,7 +1,7 @@
 #!/bin/sh
 
 init() {
-    yum install -y zsh tree zip net-tools bind-utils vim lsof curl wget git lrzsz sysstat strace telnet tcpdump
+    yum install -y zsh tree zip net-tools bind-utils vim lsof curl wget git lrzsz sysstat strace telnet tcpdump php
 }
 
 install_zsh() {
@@ -32,6 +32,8 @@ install_zsh() {
 clean() {
     yum clean all
 }
+
+update-repo.sh
 
 init
 install_zsh
