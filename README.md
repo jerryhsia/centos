@@ -1,3 +1,3 @@
-# centos
+# centos-box
 
-centos8 docker image
+centos with common tools.
