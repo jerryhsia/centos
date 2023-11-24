@@ -1,7 +1,7 @@
 #!/bin/sh
 
 init() {
-    yum install -y zsh tree zip net-tools bind-utils vim lsof curl wget git lrzsz sysstat strace telnet tcpdump php python39 python39-devel python39-pip make gcc gcc-c++
+    yum install -y zsh tree zip net-tools bind-utils vim lsof curl wget git lrzsz sysstat strace telnet tcpdump php make gcc gcc-c++
 }
 
 install_zsh() {
@@ -27,6 +27,11 @@ install_zsh() {
     sed -i 's/robbyrussell/maran/g' ~/.zshrc
 
     echo "install_zsh end"
+}
+
+install_python() {
+    yum install -y python39 python39-devel python39-pip
+    pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 }
 
 clean() {
