@@ -1,7 +1,7 @@
 #!/bin/sh
 
 init() {
-    yum install -y zsh tree zip net-tools bind-utils vim lsof curl wget git lrzsz sysstat strace telnet tcpdump php python39 python39-devel python39-pip gcc gcc-c++
+    yum install -y zsh tree zip net-tools bind-utils vim lsof curl wget git lrzsz sysstat strace telnet tcpdump php python39 python39-devel python39-pip make gcc gcc-c++
 }
 
 install_zsh() {
