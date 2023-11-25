@@ -42,6 +42,7 @@ update-repo.sh
 
 init
 install_zsh
+install_python
 clean
 
 echo "BUILD SUCCESS"
